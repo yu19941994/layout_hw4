@@ -1,0 +1,273 @@
+.blognav{
+    background-color: $third;
+    &_inside{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_detail{
+        display: flex;
+        li{
+            padding: 12px 0;
+            margin-right: 40px;
+        }
+        li > a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    @include phone(){
+        display: none;
+    }
+}
+.blog{
+    padding: 82px 0 156px 0;
+    @include pad(){
+        padding: 40px 0 104px 0;
+    }
+    @include phone(){
+        padding: 24px 0 56px 0;
+    }
+    &_card{
+        display: flex;
+        margin-bottom: 60px;
+        @include pad(){
+            margin-bottom: 32px;
+        }
+        @include phone(){
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+        &:nth-last-child(n){
+            margin-bottom: 100px;
+            @include phone(){
+                margin-bottom: 39px;
+            }
+        }
+    }
+    &_img{
+        width: 57.2%;
+        margin-right: 30px;
+        img{
+            width: 100%;
+        }
+        @include pad(){
+            width: 47.82%;
+        }
+        @include phone(){
+            width: 100%;
+        }
+    }
+    &_sub{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        @include pad(){
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 20px;
+            @include pad(){
+                font-size: 16px;
+            }
+            @include phone(){
+                font-size: 14px;
+            }
+        }
+        .s-text{
+            font-size: 16px;
+        }
+    }
+    &_context{
+        width: 40%;
+        h13 > a{
+            text-decoration: none;
+            color: $third;
+        }
+        h14{
+            text-align: right;
+        }
+        @include pad(){
+            width: 47.82%;
+        }
+        @include phone(){
+            width: 100%;
+        }
+    }
+    &_detail{
+        margin-bottom: 19px;
+        .pc{
+            @include pad(){
+                display: none;
+            }
+        }
+        .pad{
+            display: none;
+            @include pad(){
+                display: block;
+            }
+        }
+        
+        p{
+            font-size: 20px;
+            @include pad(){
+                font-size: 14px;
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+        @include phone(){
+            display: none;
+        }
+    }
+}
+.blogsingle{
+    &_tag{
+        p{
+            font-size: 24px;
+            font-weight: bold;
+            @include pad(){
+                font-size: 16px;
+            }
+            @include phone(){
+                font-size: 14px;
+            }
+        }
+    }
+    &_main{
+        width: 74.32%;
+        h15{
+            @include phone(){
+                color: $third;
+            }
+        }
+        img{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        p{
+            margin-bottom: 36px;
+        }
+        @include pad(){
+            width: 73.91%;
+        }
+        @include phone(){
+            width: 100%;
+        }
+    }
+    &_sub{
+        display: flex;
+        justify-content: space-between
+    }
+    &_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_tagsbottom{
+        display: none;
+        margin-bottom: 56px;
+        @include phone(){
+           display: block;
+        }
+        .title{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 8px;
+            }
+        }
+        .content{
+            p{
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+    &_tags{
+        width: 22.97%;
+        .title{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 8px;
+            }
+        }
+        .content{
+            p{
+                font-size: 24px;
+                font-weight: bold;
+                @include pad(){
+                    font-size: 16px;
+                }
+            }
+        }
+        @include pad(){
+           width: 17.39%; 
+        }
+        @include phone(){
+           display: none;
+        }
+    }
+    &_footer{
+        width: 74.32%;
+        .share{
+            display: flex;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $muted-light;
+            p{
+                font-weight: bold;
+                margin-right: 19px;
+            }
+            img{
+               margin-right: 16px; 
+            }
+        }
+        .prenext{
+            margin-top: 24px;
+            margin-bottom: 304px;
+            display: flex;
+            justify-content: space-between;
+            &_item{
+                display: flex;
+                img{
+                    margin-right: 8px;
+                }
+                p{
+                    font-weight: bold;
+                }
+                @include phone(){
+                    margin-bottom: 8px;
+                }
+            }
+            @include pad(){
+                margin-bottom: 104px;
+            }
+            @include phone(){
+                margin-bottom: 39px;
+                flex-direction: column;
+            }
+        }
+        @include pad(){
+            width: 100%;
+        }
+    }
+    
+}
+.breadcrumb{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    li{
+        font-size: 16px;
+        font-weight: bold;
+        @include pad(){
+            font-size: 14px;
+        }
+    }
+    @include pad(){
+        margin-bottom: 8px;
+    }
+    @include phone(){
+        margin-bottom: 6px;
+    }
+}

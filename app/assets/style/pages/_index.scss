@@ -1,0 +1,329 @@
+.blockpadding{
+    padding: 64px 0 80px 0;
+    @include pad(){
+        padding: 40px 0;
+    }
+    @include phone(){
+        padding: 32px 0;
+    }
+}
+
+.banner{
+    background-image: url("../images/banner.png");
+    height: 840px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_text{
+        width: 80%;
+        p{
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: bold;
+            text-align: right;  
+            @include pad(){
+                font-size: 20px;
+                line-height: 28px; 
+            }
+        }
+        h1{
+            font-weight: bold;
+            text-align: right; 
+        }
+    }
+    @include pad(){
+        background-image: url("../images/banner-sm.png");
+        background-position: left center;
+    }
+    @include phone(){
+        background-image: url("../images/banner.png");
+        background-position: 55% center;
+        background-size: auto 394px;
+        height: 394px;
+    }
+}
+
+.description{
+    background-color: $secondary;
+    text-align: center;
+    &_detail{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+         @include pad(){
+            padding: 0 30px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+    &_des{
+        width: 22.97%;
+        &:last-child{
+            order: -1;
+            @include pad(){
+                order: 4;
+            }
+        }
+        img{
+            max-width: 100px;
+            height: 100px;
+            margin-bottom: 39px; 
+        }
+        h4{
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold;
+            text-align: left;
+        }
+        @include pad(){
+            width: 39.13%;
+            margin: 0 30px 39px 30px;
+        }
+        @include phone(){
+            width: 100%;
+        }
+    }
+}
+
+.glasses{
+    &_gla{
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 55%;
+            margin: 0 30px;
+            @include pad(){
+                width: 45%;
+            }
+            @include phone(){
+                width: 100%;
+                margin: 0;
+            }
+        }
+        @include pad(){
+            margin-bottom: 8px;
+        }
+        @include phone(){
+            position: relative;
+        }
+    }
+    &_glareverse{
+        flex-direction: row-reverse;
+        @include pad(){
+            flex-direction: row;
+        }
+    }
+    &_glatext{
+        display: flex;
+        align-items: center;
+        h3{
+            color: $primary;
+            font-weight: bold;
+            font-style: italic; 
+            @include phone(){
+                color: $light;
+            }
+        }
+        img{
+            @include pad(){
+                max-width: 32px;
+            }
+            @include phone(){
+                display: none;
+            }
+        }
+        @include phone(){
+            position: absolute;
+            z-index: 100;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .icon-white{
+        display: none;
+        @include phone(){
+            display: block;
+        }
+    }
+}
+
+.cobrand{
+    background-image: url('../images/bg.png');
+    background-position: center center;
+    background-size: cover;
+    &_img{
+        display: flex;
+        justify-content: center;
+        @include phone(){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &_co{
+        position: relative;
+        max-width: 540px;
+        max-height: 472px;
+        margin: 0 15px; 
+        .white-bg, h5{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img{
+            display: block;
+            position: relative;
+        }
+        .white-bg{
+            background-color: white;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+        }
+        h5{
+            // z-index: 200;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+        @include pad(){
+            max-width: 330px;
+        }
+        @include phone(){
+            max-width: 345px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.recommend{
+    &_customer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &_rec{
+        width: 22.97%;
+        @include pad(){
+            width: 47.82%;
+            margin-bottom: 29px;
+        }
+        @include phone(){
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+    &_recimg{
+        max-width: 100%;
+        height: 256px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include pad(){
+            max-width: 330px;
+        }
+        @include phone(){
+            max-width: 345px;
+        }
+    }
+    &_rectext{
+        border: 1px solid #DEE2E6;
+        padding: 14px 16px;
+        .name{
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+        .message{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        .time{
+            color: #707070;
+        }
+        @include pad(){
+            padding-top: 16px;
+        }
+    }
+}
+
+.contactus{
+    background-color: $secondary;
+    .container{
+        p{
+            font-weight: bold;
+            max-width: 730px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        form{
+            label{
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 4px;
+                display: inline-block;
+                width: 100%;
+            }
+            input{
+                height: 50px;
+                background-color: $secondary;
+                margin-bottom: 16px;
+                border: 1px solid gray;
+                display: inline-block;
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+                background-color: $secondary;
+                margin-bottom: 16px;
+                height: 136px;
+            }
+            input[placeholder],textarea[placeholder]{
+                padding-left: 16px;
+            }
+            textarea[placeholder]{
+                padding-top: 16px;
+            }
+            .privacy{
+                margin-bottom: 42px;
+                display: flex;
+                align-items: center;
+            }
+            #privacy{
+                width: auto;
+                margin-right: 10px;
+            }
+            input[checkbox]{
+                background-color: $secondary;
+            }
+            .usersubmit{
+                text-align: center;
+                .submit{
+                    width: 50%;
+                    background-color: #AA0601;
+                    color: white;
+                    margin-bottom: 0;
+                    height: 54px;
+                    border: none;
+                }
+            }
+            
+        }
+    }
+   
+}

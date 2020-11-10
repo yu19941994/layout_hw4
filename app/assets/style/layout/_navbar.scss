@@ -1,0 +1,48 @@
+.navbar{
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 88px;
+    &_menu{
+        display: flex;
+        li{
+            @include phone(){
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border: 1px solid white;
+                width: 50%;
+                text-align: center;
+            }
+        }
+        li > a {
+            color: white;
+            text-decoration: none;
+            padding: 0 32px;
+            @include pad(){
+                padding: 0 20px;
+            }
+        }
+        @include phone(){
+            flex-wrap: wrap;
+            justify-content: stretch;
+            width: 100%;
+        }
+    }
+    &_logo{
+        @include phone(){
+            padding: 10px 0;
+            border-bottom: 1px solid white;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @include pad(){
+        padding: 30px 39px;  
+    }
+    @include phone(){
+        padding: 0;
+        flex-direction: column;
+        height: auto;
+    }
+}

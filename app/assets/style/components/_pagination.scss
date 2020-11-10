@@ -1,0 +1,17 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.pre, .page, .next{
+    border: 1px solid #555555;
+    padding: 10px 14px;
+    @include phone(){
+        padding: 8px 10px;
+    }
+}
+
+.page.active{
+    background: #555555;
+    color: white;
+}

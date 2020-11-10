@@ -1,0 +1,126 @@
+.footer{
+    background-color: $primary;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+    }
+    &_detail{
+        width: 50%;
+    }
+    &_menu{
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        p{
+            font-size: 16px;
+            line-height: 22px;
+            padding-top: 12px;  
+        }
+        @include phone(){
+            display: none;
+        }
+    }
+    &_contact{
+        .contact{
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+            a{
+                font-size: 36px;
+                line-height: 48px;
+                color: white;
+                margin-left: 17px;
+                text-decoration: none; 
+                @include pad(){
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                @include phone(){
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+    &_icons{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 20%; 
+        li > img{
+            @include pad(){
+                width: 24px;
+                height: 24px;  
+            }
+        }
+    }
+    &_bottom{
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+        align-items: center;
+        color: white;
+        img{
+            @include pad(){
+                display: none;
+            }
+            @include phone(){
+                max-width: 46px;
+                display: flex;
+                align-self: flex-end;
+            }
+        }
+        @include phone(){
+            flex-direction: row-reverse;
+        }
+    }
+    &_bottomtext{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 38px;
+        flex-grow: 1;
+        align-items: center;
+        p{
+            @include phone(){
+                padding: 7px 0;;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        @include pad(){
+            margin-left: 0;
+        }
+        @include phone(){
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+    }
+    &_bottomdetail{
+        display: flex;
+        li{
+            padding: 16px;
+            a{
+                text-decoration: none;
+                color: white;
+            } 
+            @include phone(){
+                padding: 7px 0;;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+         @include phone(){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.toolbar{
+    display: flex;
+    justify-content: center;
+    &-btn {
+        width: 462px;
+        border-left: 1px solid $muted-light;
+        border-right: 1px solid $muted-light;
+        a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: $dark;
+            img{
+                margin-right: 8px;
+                @include pad(){
+                    width: 32px;
+                }
+                @include phone(){
+                    width: 15px;
+                }
+            }
+            
+            h6{
+                padding: 24px 0;
+            }
+        }
+    }
+    &-btn.active{
+        border-bottom: 16px solid $primary;
+    }
+    
+}
+
+.subbanner{
+    display: flex;
+    justify-content: space-between;
+    &_left{
+        background-image: url("../images/banner-1.png");
+    }
+    &_right{
+        background-image: url("../images/banner-2.png");
+    }
+    &_glaleft{
+        background-image: url("../images/banner-3.png");
+    }
+    &_glaright{
+        background-image: url("../images/product-2-color.png");
+    }
+    &_left, &_right, &_glaleft, &_glaright{
+        width: 50%;
+        height: 309px;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    
+
+}
+
+.productpadding{
+    padding: 88px 0 168px 0;
+    @include pad(){
+       padding: 40px 0 104px 0; 
+    }
+    @include phone(){
+        padding: 30px 0 56px 0;
+    }
+}
+.product{
+    text-align: center;
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_card{
+        width: 22%;
+        margin: 0 15px 104px 15px;
+        @include pad(){
+          width: 44%;
+          margin-bottom: 72px; 
+        }
+         @include phone(){
+          width: 100%;
+          margin-bottom: 32px; 
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &_glacard{
+        width: 30%;
+        margin: 0 15px 104px 15px;
+        @include pad(){
+          width: 44%;
+          margin-bottom: 72px; 
+        }
+         @include phone(){
+          width: 100%;
+          margin-bottom: 32px; 
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &_title{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_color{
+        display: flex;
+        .color1, .color2{
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+        }
+        .color1{
+            background-color: #5F3E2D;
+            margin-right: 8px;
+        }
+        .color2{
+            background-color: #B75929;
+        }
+    }
+}

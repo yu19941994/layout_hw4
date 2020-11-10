@@ -1,0 +1,178 @@
+.storesbanner{
+    background-image: url("../images/qa.png");
+    // height: 304px;
+    background-position: center center;
+    background-size: cover;  
+    margin-bottom: 16px;
+    .container{
+        padding-top: 214px;
+        display: flex;
+        h9{
+            margin-right: 24px;
+            @include pad(){
+                margin-right: 16px;
+            }
+            @include phone(){
+                margin-right: 8px;
+            }
+        }
+        img{
+            @include pad(){
+                max-width: 30px;;
+            }
+            @include phone(){
+                max-width: 16.72px;;
+            }
+        }
+        @include pad(){
+            padding-top: 237px;
+        }
+        @include phone(){
+            padding-top: 103px;
+        }
+    }
+}
+
+.area{
+    &_top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        h10{
+            margin-right: 20px;
+            @include phone(){
+                margin-right: 12px;
+                font-size: 14px;
+            }
+        }
+        @include pad(){
+            margin-bottom: 24px;
+        }
+        @include phone(){
+            margin-bottom: 20px;
+        }
+    }
+    &_select{
+        width: 324px;
+        position: relative;
+        select{
+            width: 100%;
+            height: 45px;
+            border-radius: 0;
+        }
+        @include pad(){
+           width: 237px; 
+        }
+        @include phone(){
+           width: 277px; 
+        }
+    }
+    &_inside{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_insidesingle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+            @include pad(){
+                width: 100%;
+            }
+        }
+        @include pad(){
+            flex-direction: column;
+        }
+    }
+    &_card{
+        width: 30%;
+        margin: 0 15px 32px 15px;
+        img{
+            display: block;
+            width: 350px;
+            height: 224px;
+        }
+        @include pad(){
+            width: 44%;
+            margin-bottom: 20px;
+        }
+        @include phone(){
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+    &_cardsingle{
+        margin-right: 30px;
+        img{
+            display: block;
+            width: 445px;
+            height: 224px;
+            @include pad(){
+                width: 50%;
+                margin-right: 30px;
+                height: 164px;
+            }
+            @include phone(){
+                width: 100%;
+            }
+        }
+        @include pad(){
+            display: flex;
+            margin-right: 0;
+            margin-bottom: 32px;
+        }
+        @include phone(){
+            flex-direction: column;
+        }
+    }
+
+    &_card, &_cardsingle{
+        h10{
+            display: block;
+            width: 100%;
+            padding: 12px 24px;
+            border-bottom: 1px solid $muted-light;
+            a{
+                text-decoration: none;
+                color: $dark;
+            }
+        }
+    }
+    &_container{
+        border: 1px solid $muted-light;
+    }
+    &_detail{
+        padding: 16px 24px;
+        li{
+            display: flex;
+            margin-bottom: 8px;
+            img{
+                width: 21px;
+                height: 21px;
+                margin-right: 12px;
+            }
+        }
+        @include pad(){
+            padding: 16px;
+            font-size: 14px;
+        }
+    }
+    &_btn{
+        display: inline-block;
+        width: 100%;
+        background-color: $dark;
+        color: $light;
+        padding: 20px 0;
+        font-size: 19px;
+    }
+}
+
+.areamargin{
+    margin-bottom: 304px;
+    @include pad(){
+        margin-bottom: 104px;
+    }
+    @include phone(){
+        margin-bottom: 56px;
+    }
+}
