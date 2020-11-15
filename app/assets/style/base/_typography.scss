@@ -5,7 +5,7 @@ body {
 body {
   line-height: 1.5;
 }
-h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, h13, h14, h15, h16 {
+h1, h2, h3, h4, h5, h6, .font--1, .font--2, .font--3, .font--4, .font--5, .font--6, .font--7, .font--8, .font--9, .font--10 {
   line-height: 1.2;
 }
 
@@ -60,7 +60,7 @@ h6{
     font-size: 14px;
   }
 }
-h7{
+.font--1{
   font-size: 42px;
   display: block;
   @include pad(){
@@ -70,7 +70,7 @@ h7{
     font-size: 20px;
   }
 }
-h8{
+.font--2{
   font-size: 32px;
   display: block;
   margin-bottom: 40px;
@@ -83,7 +83,7 @@ h8{
     margin-bottom: 20px;
   }
 }
-h9{
+.font--3{
   display: block;
   font-size: 64px;
   @include pad(){
@@ -93,14 +93,14 @@ h9{
     font-size: 28px;
   }
 }
-h10{
+.font--4{
   display: block;
   font-size: 24px;
   @include pad(){
     font-size: 16px;
   }
 }
-h11{
+.font--5{
   display: block;
   font-size: 32px;
   margin-bottom: 36px;
@@ -109,7 +109,7 @@ h11{
     margin-bottom: 12px;
   }
 }
-h12{
+.font--6{
   display: block;
   font-size: 20px;
   margin-bottom: 16px;
@@ -118,7 +118,7 @@ h12{
     margin-bottom: 8px;
   }
 }
-h13{
+.font--7{
   display: block;
   font-size: 32px;
   @include pad(){
@@ -128,7 +128,7 @@ h13{
     font-size: 16px;
   }
 }
-h14{
+.font--8{
   display: block;
   font-size: 36px;
   font-weight: bold;
@@ -136,7 +136,7 @@ h14{
     display: none;
   }
 }
-h15{
+.font--9{
   display: block;
   font-size: 48px;
   font-weight: bold;
@@ -147,7 +147,7 @@ h15{
     font-size: 20px;
   }
 }
-h16{
+.font--10{
   display: block;
   font-size: 28px;
   font-weight: bold;

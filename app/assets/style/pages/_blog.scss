@@ -1,10 +1,10 @@
 .blognav{
     background-color: $third;
-    &_inside{
+    &__inside{
         display: flex;
         justify-content: space-between;
     }
-    &_detail{
+    &__detail{
         display: flex;
         li{
             padding: 12px 0;
@@ -27,7 +27,7 @@
     @include phone(){
         padding: 24px 0 56px 0;
     }
-    &_card{
+    &__card{
         display: flex;
         margin-bottom: 60px;
         @include pad(){
@@ -44,7 +44,7 @@
             }
         }
     }
-    &_img{
+    &__img{
         width: 57.2%;
         margin-right: 30px;
         img{
@@ -57,7 +57,7 @@
             width: 100%;
         }
     }
-    &_sub{
+    &__sub{
         display: flex;
         justify-content: space-between;
         margin-bottom: 24px;
@@ -77,13 +77,13 @@
             font-size: 16px;
         }
     }
-    &_context{
+    &__context{
         width: 40%;
-        h13 > a{
+        .font--7 > a{
             text-decoration: none;
             color: $third;
         }
-        h14{
+        .font--8{
             text-align: right;
         }
         @include pad(){
@@ -92,8 +92,15 @@
         @include phone(){
             width: 100%;
         }
+        p>a{
+            text-decoration: none;
+            color: $third;
+            &:hover{
+                background-color: $muted-light;
+            }
+        }
     }
-    &_detail{
+    &__detail{
         margin-bottom: 19px;
         .pc{
             @include pad(){
@@ -122,7 +129,7 @@
     }
 }
 .blogsingle{
-    &_tag{
+    &__tag{
         p{
             font-size: 24px;
             font-weight: bold;
@@ -134,9 +141,9 @@
             }
         }
     }
-    &_main{
+    &__main{
         width: 74.32%;
-        h15{
+        .font--9{
             @include phone(){
                 color: $third;
             }
@@ -155,15 +162,15 @@
             width: 100%;
         }
     }
-    &_sub{
+    &__sub{
         display: flex;
         justify-content: space-between
     }
-    &_container{
+    &__container{
         display: flex;
         justify-content: space-between;
     }
-    &_tagsbottom{
+    &__tagsbottom{
         display: none;
         margin-bottom: 56px;
         @include phone(){
@@ -183,7 +190,7 @@
             }
         }
     }
-    &_tags{
+    &__tags{
         width: 22.97%;
         .title{
             display: flex;
@@ -208,7 +215,7 @@
            display: none;
         }
     }
-    &_footer{
+    &__footer{
         width: 74.32%;
         .share{
             display: flex;
@@ -227,7 +234,7 @@
             margin-bottom: 304px;
             display: flex;
             justify-content: space-between;
-            &_item{
+            &__item{
                 display: flex;
                 img{
                     margin-right: 8px;

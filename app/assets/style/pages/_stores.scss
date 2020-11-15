@@ -7,7 +7,7 @@
     .container{
         padding-top: 214px;
         display: flex;
-        h9{
+        .font--3{
             margin-right: 24px;
             @include pad(){
                 margin-right: 16px;
@@ -34,11 +34,11 @@
 }
 
 .area{
-    &_top{
+    &__top{
         display: flex;
         align-items: center;
         margin-bottom: 32px;
-        h10{
+        .font--4{
             margin-right: 20px;
             @include phone(){
                 margin-right: 12px;
@@ -52,7 +52,7 @@
             margin-bottom: 20px;
         }
     }
-    &_select{
+    &__select{
         width: 324px;
         position: relative;
         select{
@@ -67,11 +67,11 @@
            width: 277px; 
         }
     }
-    &_inside{
+    &__inside{
         display: flex;
         flex-wrap: wrap;
     }
-    &_insidesingle{
+    &__insidesingle{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -84,7 +84,7 @@
             flex-direction: column;
         }
     }
-    &_card{
+    &__card{
         width: 30%;
         margin: 0 15px 32px 15px;
         img{
@@ -101,7 +101,7 @@
             margin-bottom: 16px;
         }
     }
-    &_cardsingle{
+    &__cardsingle{
         margin-right: 30px;
         img{
             display: block;
@@ -126,8 +126,8 @@
         }
     }
 
-    &_card, &_cardsingle{
-        h10{
+    &__card, &__cardsingle{
+        .font--4{
             display: block;
             width: 100%;
             padding: 12px 24px;
@@ -138,10 +138,10 @@
             }
         }
     }
-    &_container{
+    &__container{
         border: 1px solid $muted-light;
     }
-    &_detail{
+    &__detail{
         padding: 16px 24px;
         li{
             display: flex;
@@ -157,13 +157,16 @@
             font-size: 14px;
         }
     }
-    &_btn{
+    &__btn{
         display: inline-block;
         width: 100%;
         background-color: $dark;
         color: $light;
         padding: 20px 0;
         font-size: 19px;
+        &:hover{
+            background-color: $primary;
+        }
     }
 }
 

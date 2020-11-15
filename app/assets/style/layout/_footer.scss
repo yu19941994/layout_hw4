@@ -5,31 +5,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &_top{
+    &__top{
         width: 100%;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid white;
         padding-bottom: 20px;
     }
-    &_detail{
+    &__detail{
         width: 50%;
     }
-    &_menu{
+    &__menu{
         display: flex;
         color: white;
         justify-content: space-between;
         margin-bottom: 32px;
-        p{
+        li{
             font-size: 16px;
             line-height: 22px;
-            padding-top: 12px;  
+            padding: 12px 5px 0 5px; 
+            &:hover{
+                background-color: $muted;
+            }
+            a{
+                text-decoration: none;
+                color: $light;
+            } 
         }
         @include phone(){
             display: none;
         }
     }
-    &_contact{
+    &__contact{
         .contact{
             display: flex;
             align-items: center;
@@ -49,9 +56,17 @@
                     line-height: 21px;
                 }
             }
+            img{
+                @include pad(){
+                    width: 24px;
+                }
+                @include phone(){
+                    width: 20px;
+                }
+            }
         }
     }
-    &_icons{
+    &__icons{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -63,7 +78,7 @@
             }
         }
     }
-    &_bottom{
+    &__bottom{
         width: 100%;
         display: flex;
         padding-top: 20px;
@@ -83,7 +98,7 @@
             flex-direction: row-reverse;
         }
     }
-    &_bottomtext{
+    &__bottomtext{
         display: flex;
         justify-content: space-between;
         margin-left: 38px;
@@ -104,7 +119,7 @@
             align-items: flex-start; 
         }
     }
-    &_bottomdetail{
+    &__bottomdetail{
         display: flex;
         li{
             padding: 16px;

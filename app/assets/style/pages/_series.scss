@@ -34,19 +34,19 @@
 .subbanner{
     display: flex;
     justify-content: space-between;
-    &_left{
+    &__left{
         background-image: url("../images/banner-1.png");
     }
-    &_right{
+    &__right{
         background-image: url("../images/banner-2.png");
     }
-    &_glaleft{
+    &__glaleft{
         background-image: url("../images/banner-3.png");
     }
-    &_glaright{
+    &__glaright{
         background-image: url("../images/product-2-color.png");
     }
-    &_left, &_right, &_glaleft, &_glaright{
+    &__left, &__right, &__glaleft, &__glaright{
         width: 50%;
         height: 309px;
         background-position: center center;
@@ -68,11 +68,11 @@
 }
 .product{
     text-align: center;
-    &_container{
+    &__container{
         display: flex;
         flex-wrap: wrap;
     }
-    &_card{
+    &__card{
         width: 22%;
         margin: 0 15px 104px 15px;
         @include pad(){
@@ -87,7 +87,7 @@
             width: 100%;
         }
     }
-    &_glacard{
+    &__glacard{
         width: 30%;
         margin: 0 15px 104px 15px;
         @include pad(){
@@ -102,11 +102,11 @@
             width: 100%;
         }
     }
-    &_title{
+    &__title{
         display: flex;
         justify-content: space-between;
     }
-    &_color{
+    &__color{
         display: flex;
         .color1, .color2{
             width: 24px;

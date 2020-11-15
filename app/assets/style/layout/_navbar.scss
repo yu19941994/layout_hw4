@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 88px;
-    &_menu{
+    &__menu{
         display: flex;
         li{
             @include phone(){
@@ -13,6 +13,9 @@
                 border: 1px solid white;
                 width: 50%;
                 text-align: center;
+            }
+            &:hover{
+                background-color: $muted;
             }
         }
         li > a {
@@ -29,13 +32,30 @@
             width: 100%;
         }
     }
-    &_logo{
+    &__logo{
+        h1{
+            background-image: url('../images/logo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 80px;
+            height: 48.57px;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+            @include phone(){
+                margin: 0 auto;               
+                max-width: 48px;
+                height: 29.14px;
+            }
+        }
         @include phone(){
-            padding: 10px 0;
+            padding: 10px 0 ;
             border-bottom: 1px solid white;
             width: 100%;
-            text-align: center;
+            height: 50px;
+            // height: auto;
         }
+       
     }
     @include pad(){
         padding: 30px 39px;  

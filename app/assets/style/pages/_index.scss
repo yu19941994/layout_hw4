@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &_text{
+    &__text{
         width: 80%;
         p{
             font-size: 36px;
@@ -49,7 +49,7 @@
 .description{
     background-color: $secondary;
     text-align: center;
-    &_detail{
+    &__detail{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap; 
@@ -59,7 +59,7 @@
             justify-content: space-evenly;
         }
     }
-    &_des{
+    &__des{
         width: 22.97%;
         &:last-child{
             order: -1;
@@ -93,7 +93,7 @@
 }
 
 .glasses{
-    &_gla{
+    &__gla{
         margin-bottom: 32px;
         display: flex;
         align-items: center;
@@ -115,13 +115,13 @@
             position: relative;
         }
     }
-    &_glareverse{
+    &__glareverse{
         flex-direction: row-reverse;
         @include pad(){
             flex-direction: row;
         }
     }
-    &_glatext{
+    &__glatext{
         display: flex;
         align-items: center;
         h3{
@@ -160,7 +160,7 @@
     background-image: url('../images/bg.png');
     background-position: center center;
     background-size: cover;
-    &_img{
+    &__img{
         display: flex;
         justify-content: center;
         @include phone(){
@@ -168,7 +168,7 @@
             align-items: center;
         }
     }
-    &_co{
+    &__co{
         position: relative;
         max-width: 540px;
         max-height: 472px;
@@ -206,12 +206,12 @@
 }
 
 .recommend{
-    &_customer{
+    &__customer{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    &_rec{
+    &__rec{
         width: 22.97%;
         @include pad(){
             width: 47.82%;
@@ -222,7 +222,7 @@
             margin-bottom: 16px;
         }
     }
-    &_recimg{
+    &__recimg{
         max-width: 100%;
         height: 256px;
         img{
@@ -238,7 +238,7 @@
             max-width: 345px;
         }
     }
-    &_rectext{
+    &__rectext{
         border: 1px solid #DEE2E6;
         padding: 14px 16px;
         .name{
@@ -263,7 +263,15 @@
 
 .contactus{
     background-color: $secondary;
-    .container{
+    &__container{
+        max-width: 730px;
+        margin: 0 auto;
+        @include pad(){
+            max-width: 450px;
+        }
+        @include phone(){
+            max-width: 345px;
+        }
         p{
             font-weight: bold;
             max-width: 730px;
@@ -320,6 +328,9 @@
                     margin-bottom: 0;
                     height: 54px;
                     border: none;
+                    &:hover{
+                       background-color: $dark; 
+                    }
                 }
             }
             

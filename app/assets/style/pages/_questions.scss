@@ -6,7 +6,7 @@
     @include phone(){
        padding: 24px 0 59px 0; 
     }
-    &_detail{
+    &__detail{
         li{
             margin-bottom: 40px;
             @include phone(){
