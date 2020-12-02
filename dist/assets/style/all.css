@@ -293,7 +293,8 @@ h6 {
             -ms-flex-pack: stretch;
                 justify-content: stretch;
         width: 100%; } }
-  .navbar__logo h1 {
+  .navbar__logo h1 > a {
+    display: block;
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,7 +304,7 @@ h6 {
     white-space: nowrap;
     overflow: hidden; }
     @media (max-width: 767px) {
-      .navbar__logo h1 {
+      .navbar__logo h1 > a {
         margin: 0 auto;
         max-width: 48px;
         height: 29.14px; } }
